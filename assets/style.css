@@ -1,0 +1,151 @@
+* {
+    font-family: 'Scheherazade New', serif;
+}
+
+body {
+    background-color: rgba(244, 244, 244, 0.827);
+}
+
+#cv-container {
+    margin: 5% 8%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+    padding: 0.3em 3%;
+    background-color: white;
+}
+
+
+/*----------------------------------------------------------------*/
+
+header {
+    padding: 0.3em 3%;
+}
+
+.pages {
+    width: 5em;
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-style: italic;
+    color: rgba(137, 137, 137, 0.553);
+}
+
+#accueil {
+    margin-left: 65%;
+    margin-top: -85px;
+    color: rgba(88, 88, 88, 0.786);
+}
+
+#contacts {
+    margin-left: 87%;
+    margin-top: -47px;
+}
+
+
+/*----------------------------------------------------------------*/
+
+#name {
+    font-size: 30px;
+}
+
+#bandeau {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    min-width: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    max-width: 400px;
+    min-width: 300px;
+    font-style: oblique;
+    font-size: 210%;
+}
+
+#desc {
+    width: 200%;
+    max-height: 10%;
+    min-height: 5%;
+    min-width: 100%;
+    max-width: 200%;
+}
+
+#pp {
+    min-width: 50%;
+    max-width: 150%;
+}
+
+#download {
+    height: 10%;
+    width: 30%;
+    max-width: 100%;
+    position: absolute;
+    bottom: -5%;
+    left: 70%;
+    border-radius: 30px;
+}
+
+aside {
+    width: 20%;
+    min-height: 10%;
+    max-height: 30%;
+}
+
+h2 {
+    border-bottom: 2px solid rgb(21, 133, 214);
+    max-width: 30px;
+}
+
+
+/*----------------------------------------------------------------*/
+
+#coffee {
+    color: rgb(21, 133, 214);
+    font-size: 1.5em;
+}
+
+#dead {
+    color: rgb(21, 133, 214);
+    font-size: 1.5em;
+}
+
+#terminal {
+    color: rgb(21, 133, 214);
+    font-size: 1.5em;
+}
+
+#file {
+    color: rgb(21, 133, 214);
+    font-size: 1.5em;
+}
+
+#Skill {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Skills {
+    display: inline-block;
+    width: 35%;
+    max-height: 10%;
+    padding-right: 15%;
+}
+
+.skill-title {
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.skill-desc {
+    font-size: 1em;
+    font-style: italic;
+    margin-top: -60px;
+    margin-left: 10%;
+}
