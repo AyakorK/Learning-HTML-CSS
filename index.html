@@ -32,7 +32,7 @@
 
         <div id="bandeau">
             <figure id="pp">
-                <img src="images/profile-picture.png" alt="Profile Picture of Guillaume MORET">
+                <img src="images/profile-picture.png" alt="Profile Picture of Guillaume MORET" id="profile-picture">
             </figure>
             <aside>
                 <h1>Etudiant à la CodingFactory</h1>
@@ -65,83 +65,97 @@
             </div>
         </section>
 
-        <section>
-            <h2>Avis</h2>
+        <h2>Avis</h2>
+        <section id="avis-container">
             <div class="avis" id="avis1">
                 <figure>
-                    <img src="imgavis1" alt="Portrait" class="photos-avis">
+                    <img src="images/avis1.jpeg" alt="Portrait" class="photos-avis">
                 </figure>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</h3>
-                <h4>Barack obama</h4>
+                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
 
             </div>
             <div class="avis" id="avis2">
                 <figure>
-                    <img src="imgavis2" alt="Portrait" class="photos-avis">
+                    <img src="images/avis2.jpeg" alt="Portrait" class="photos-avis">
                 </figure>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</h3>
-                <h4>Barack obama</h4>
+                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
 
             </div>
-            <div class="avis" id="avis3">
+            <div class="avisp2" id="avis3">
                 <figure>
-                    <img src="imgavis3" alt="Portrait" class="photos-avis">
+                    <img src="images/avis3.jpeg" alt="Portrait" class="photos-avis">
                 </figure>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</h3>
-                <h4>Barack obama</h4>
+                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
 
             </div>
-            <div class="avis" id="avis4">
+            <div class="avisp2" id="avis4">
                 <figure>
-                    <img src="imgavis4" alt="Portrait" class="photos-avis">
+                    <img src="images/avis4.jpeg" alt="Portrait" class="photos-avis">
                 </figure>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</h3>
-                <h4>Barack obama</h4>
+                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
 
             </div>
+
+            <button class="Switch">Switch</button>
         </section>
         <h2>Collaborateurs</h2>
-        <span id="Collaborateurs">
-            <figure>
-                <img src="collab1" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab2" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab3" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab4" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab5" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab6" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab7" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab8" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab9" alt="Image collaborateur">
-            </figure>
-            <figure>
-                <img src="collab10" alt="Image collaborateur">
-            </figure>
-        </span>
+        <section id="Collaborateurs">
+            <div class="line1">
+                <figure class="placing-img">
+                    <img id="Tesla" src="images/collab1.png" alt="Image collaborateur">
+                </figure>
+                <figure class="placing-img">
+                    <img id="Harvard" src="images/collab2.png" alt="Image collaborateur">
+                </figure>
+                <figure class="placing-img">
+                    <img class="image-size" src="images/collab3.png" alt="Image collaborateur">
+                </figure>
+            </div>
+            <div class="line2">
+                <figure class="placing-img">
+                    <img id="HEC" src="images/collab4.png" alt="Image collaborateur">
+                </figure>
+                <figure class="placing-img">
+                    <img id="ESSEC" src="images/collab5.png" alt="Image collaborateur">
+                </figure>
+                <figure class="placing-img ">
+                    <img class="image-size " src="images/collab6.png " alt="Image collaborateur ">
+                </figure>
+            </div>
+            <div class="line3">
+
+                <figure class="placing-img ">
+                    <img id="SpaceX" src="images/collab7.png " alt="Image collaborateur ">
+                </figure>
+                <figure class="placing-img ">
+                    <img id="BMW" src="images/collab8.png " alt="Image collaborateur ">
+                </figure>
+                <figure class="placing-img ">
+                    <img class="image-size " src="images/collab9.png " alt="Image collaborateur ">
+                </figure>
+            </div>
+            <div class="line4">
+
+                <figure class="placing-img ">
+                    <img id="Amazon" src="images/collab10.png " alt="Image collaborateur ">
+                </figure>
+            </div>
+
+            <button id="Switch2" class="Switch">Switch</button>
+        </section>
         <h2>Anecdotes vraies</h2>
-        <div class="Histoires" id="Histoire1">
-            <p class="anecdote">
+        <div class="Histoires " id="Histoire1 ">
+            <p class="anecdote ">
                 <figure>
-                    <img src="symbol1" alt="Symbole">
+                    <img src="symbol1 " alt="Symbole ">
                 </figure>
                 Nombre de collaborations
             </p>
@@ -150,10 +164,10 @@
             </p>
 
         </div>
-        <div class="Histoires" id="Histoire2">
-            <p class="anecdote">
+        <div class="Histoires " id="Histoire2 ">
+            <p class="anecdote ">
                 <figure>
-                    <img src="symbol1" alt="Symbole">
+                    <img src="symbol1 " alt="Symbole ">
                 </figure>
                 Heures de travail
             </p>
@@ -162,11 +176,11 @@
             </p>
 
         </div>
-        <div class="Histoires" id="Histoire3">
+        <div class="Histoires " id="Histoire3 ">
             <figure>
-                <img src="symbol1" alt="Symbole">
+                <img src="symbol1 " alt="Symbole ">
             </figure>
-            <p class="anecdote">
+            <p class="anecdote ">
                 Projets à réaliser
             </p>
             <p>
@@ -174,11 +188,11 @@
             </p>
 
         </div>
-        <div class="Histoires" id="Histoire4">
+        <div class="Histoires " id="Histoire4 ">
             <figure>
-                <img src="symbol1" alt="Symbole">
+                <img src="symbol1 " alt="Symbole ">
             </figure>
-            <p class="anecdote">
+            <p class="anecdote ">
                 Projet réalisé
             </p>
             <p>
@@ -188,15 +202,15 @@
         </div>
 
         <footer>
-            <a href="https://twitter.com/" target="_blank">
+            <a href="https://twitter.com/ " target="_blank ">
                 Twitter
             </a>
 
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/ " target="_blank ">
                 Github
             </a>
 
-            <a href="https://instagram.com/" target="_blank">
+            <a href="https://instagram.com/ " target="_blank ">
                 Instagram
             </a>
 
@@ -211,7 +225,7 @@
 
 
 
-    <script src="assets/script.js"></script>
+    <script src="assets/script.js "></script>
 </body>
 
 </html>
