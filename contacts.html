@@ -6,20 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/style2.css">
 </head>
 
 <body>
     <div id="contact-container">
         <header>
-            <p><strong>Guillaume</strong> MORET</p>
-            <button>
-                <a href="index.html">Accueil</a>
-            </button>
-            <button>
-                <a href="contacts.html">contacts</a>
-            </button>
+            <p id="name"><strong>Contact us</strong></p>
+            <nav>
+                <a href="index.html" id=accueil class="pages">Accueil</a>
+                <a href="contacts.html" id=contacts class="pages">contacts</a>
+            </nav>
         </header>
-        <form action="contacts"></form>
+        <div id="form">
+
+            <form action="get">
+                <section id=form-container>
+                    <h2>Genre :</h2>
+                    <div id="genre">
+                        <input name="genre" id="man" class="radio" type="radio" required not-checked> <label class="genre-label" for="man">Homme</label>
+                        <input name="genre" id="woman" class="radio" type="radio" required not-checked> <label class="genre-label" for="woman">Femme</label>
+                        <input name="genre" id="no-genre" class="radio" type="radio" required not-checked> <label class="genre-label" for="no-genre">Non Spécifié</label>
+                    </div>
+                    <h2>Coordonnées :</h2>
+                    <div id="coordinates">
+                        <label for="username">Nom :</label> <input type="text" id="username" class="text" name="name" placeholder="Entrez votre nom" required pattern="([\w])">
+                        <label for="userFirstname">Prénom :</label> <input type="text" id="userfirstname" class="text" name="firstname" placeholder="Entrez votre prénom" required pattern="([\w])">
+                        <label for="email">E-Mail :</label> <input type="email" id="email" class="text" name="mail" placeholder="Entrez votre adresse mail " required pattern="[\w.-]+@[\w.-]+\.[a-z]{1,}">
+                        <label for="tel ">Téléphone :</label> <input type="tel " id="tel " class="text " name="tel " placeholder="Entrez votre tel " required pattern="[0-9]{10} ">
+                    </div>
+                    <h2>Feedback</h2>
+                    <div id="Feedback">
+                        <label for="avis ">Avis</label> <textarea type="text " id="avis " class="textarea " placeholder="Entrez votre avis pour nous aider !"></textarea>
+                        <label for="questions ">Questions</label> <textarea type="text" id="questions" class="textarea" placeholder="Posez nous votre question !"></textarea>
+
+                    </div>
+
+
+
+                    <input type="submit" id="Submit" value="Validez et envoyez votre demande ">
+
+                </section>
+            </form>
+        </div>
+
+
+
+        <footer>
+            <div class="social">
+
+                <a class='pages' id="twitter " href="https://twitter.com/ " target="_blank ">
+                    Twitter
+                </a>
+
+                <a class='pages' id="github " href="https://github.com/ " target="_blank ">
+                    Github
+                </a>
+
+                <a class='pages' id="insta " href="https://instagram.com/ " target="_blank ">
+                    Instagram
+                </a>
+
+            </div>
+
+            <p id="Copyright">©2021, Tous droits réservés</p>
+        </footer>
     </div>
 </body>
 

@@ -1,0 +1,284 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.108));
+}
+
+body {
+    background-color: rgba(249, 249, 249, 0.827);
+    filter: drop-shadow(0px 0px 0px rg);
+}
+
+#contact-container {
+    margin: 5% 8%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+    padding: 0.3em 3%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+#name {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*----------------------------------------------------------------*/
+
+h2 {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
+    padding: 0.3em 3%;
+    margin-left: -3%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255)
+}
+
+.pages {
+    width: 8em;
+    position: relative;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-style: italic;
+    color: rgba(137, 137, 137, 0.553);
+}
+
+#accueil,
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -90px;
+}
+
+#accueil {
+    float: left;
+}
+
+#contacts {
+    float: right;
+    color: rgba(88, 88, 88, 0.786);
+    margin-right: -80px;
+}
+
+
+/* ================================================================= */
+
+.social {
+    border-top: 1px solid rgba(134, 134, 134, 0.368);
+    width: 108%;
+    padding-top: 30px;
+    margin-left: -30px;
+}
+
+#insta,
+#github,
+#twitter {
+    margin-right: 30px;
+}
+
+#Copyright {
+    margin-left: 90%;
+    margin-top: -20px;
+}
+
+
+/* ================================================================= */
+
+label {
+    font-size: 1.4em;
+}
+
+#form {
+    margin: 5% 3%;
+    border: 1px solid rgba(161, 161, 161, 0.313);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#genre,
+#coordinates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#genre {
+    justify-content: space-between;
+}
+
+#coordinates {
+    flex-direction: column;
+    align-items: center;
+}
+
+.genre-label {
+    font-size: 1.5em;
+    border: 1px solid rgb(215, 215, 215);
+}
+
+input[type="radio"]:not(:checked),
+input[type="radio"]:checked {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    background: rgba(185, 185, 185, 0.205);
+    transform: scale(1.15);
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(175, 175, 175);
+    transition: color 3.0;
+    transition: 2.4s;
+}
+
+input[type="radio"]:not(:checked)+label {
+    transform: scale(1);
+    transition: 2.4s;
+}
+
+.text {
+    width: 40%;
+    min-width: 300px;
+    height: 50px;
+    margin: 30px;
+    font-size: 1.4em;
+    border: solid 1px rgba(207, 207, 207, 0.37);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    text-align: center;
+}
+
+#Feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textarea {
+    width: 40%;
+    min-width: 400px;
+    max-width: 400px;
+    height: 70px;
+    border: solid 1px rgba(207, 207, 207, 0.37);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    margin: 30px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#Submit {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-size: 1.1em
+}
+
+
+/* =================================================================*/
+
+@media screen and (max-width: 1250px) {
+    .social {
+        border-top: 1px solid rgba(134, 134, 134, 0.368);
+        width: 108%;
+        padding-top: 30px;
+        margin-left: -30px;
+    }
+    #insta,
+    #github,
+    #twitter {
+        margin-right: 30px;
+    }
+    .symbol {
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 900px) {
+        header {
+            width: 650px;
+            margin-left: 15px;
+            height: 150px;
+        }
+        #cv-container {
+            width: 45em;
+            margin-right: 0px;
+            margin-left: 180px;
+            padding: 0px;
+        }
+        #accueil {
+            top: -50px;
+            left: 50px;
+        }
+        #contacts {
+            left: 120px;
+        }
+        #name {
+            font-size: 2.4em;
+            width: 30%;
+        }
+        #pp {
+            width: 30%;
+            min-width: 600px;
+        }
+        #desc,
+        h1 {
+            width: 40%
+        }
+        h1 {
+            font-size: 2.4em;
+            margin-left: -80px;
+        }
+        #desc {
+            font-size: 1.5em;
+        }
+        #accueil {
+            font-size: 1.8em;
+        }
+        #contacts {
+            margin-left: 350px;
+            margin-top: -40px;
+            font-size: 1.8em;
+        }
+        #insta,
+        #twitter,
+        #github {
+            margin-left: 30px;
+        }
+    }
+    @media screen and (max-width: 740px) {
+        #contact-container {
+            margin-left: 30%;
+            width: 650px;
+        }
+        header {
+            width: 580px;
+        }
+        #accueil {
+            top: -50px;
+            left: 50px;
+        }
+        #contacts {
+            left: 78px;
+        }
+        #collab-title {
+            margin-bottom: 0px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        #contact-container {
+            margin-left: 180px;
+            width: 600px;
+        }
+        header {
+            width: 530px;
+        }
+    }
+}

@@ -2,16 +2,19 @@
 <html lang="zxx">
 
 <head>
-    <script type="application/javascript">
+    <script>
         function headSwiftData(e) {
             e.forEach(e =>
                     document.querySelector("head").innerHTML += e),
                 console.log("👌 HeadSwift Head Loaded")
         }
     </script>
-    <script type="application/javascript" src="https://headswift.com/cdn/?head&frameworks=headswift-stats,font-awesome,jquery&version=0.1.0,6.0.0-beta2,3.6.0&js"></script>
+    <script src="https://api.headswift.com/cdn/?head&frameworks=headswift-stats,font-awesome,jquery&version=0.1.0,6.0.0-beta2,3.6.0&js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +26,10 @@
 <body>
     <div id="cv-container">
         <header>
-            <p id="name"><strong>Guillaume</strong> MORET</p>
+            <div class="gauche">
+                <p id="logo">G</p>
+                <p id="name"><strong>Guillaume</strong> MORET</p>
+            </div>
             <nav>
                 <a href="index.html" id=accueil class="pages">Accueil</a>
                 <a href="contacts.html" id=contacts class="pages">contacts</a>
@@ -39,13 +45,16 @@
                 <p id="desc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat exercitationem blanditiis, harum, labore doloremque aspernatur at ratione aut necessitatibus magni illum id voluptate aliquam iure! Tempora perspiciatis nemo tenetur.
                 </p>
+                <button name="Download" id="download" onclick="window.location.href ='https://www.youtube.com/watch?v=y6120QOlsfU'">
+                    
+                    Télécharger le CV
+                </button>
 
             </aside>
-            <button name="Download" id="download">Télécharger le CV</button>
         </div>
 
-        <h2>Compétences</h2>
-        <section id="Skill">
+        <h2 class="categories">Compétences</h2>
+        <div id="Skill">
             <div id="Skill1" class="Skills">
                 <p class="skill-title"><i class="fas fa-coffee" id="coffee"></i> Java </p> <br>
                 <p class="skill-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis libero commodi modi vitae adipisci laborum minima, animi cumque nihil omnis laudantium deserunt harum deleniti. Beatae nemo repellat nisi dignissimos.
@@ -63,51 +72,68 @@
                 <p class="skill-title"> <i class="fas fa-window-close" id="dead"></i> PHP </p> <br>
                 <p class="skill-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat nostrum earum possimus iure iusto quaerat necessitatibus rem dicta reprehenderit facilis, eum assumenda suscipit. Assumenda quidem, mollitia velit magnam quisquam at.</p>
             </div>
-        </section>
+        </div>
 
-        <h2>Avis</h2>
-        <section id="avis-container">
+        <h2 class="categories">Avis</h2>
+        <div id="avis-container">
             <div class="avis" id="avis1">
                 <figure>
                     <img src="images/avis1.jpeg" alt="Portrait" class="photos-avis">
+
                 </figure>
-                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
                 <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
 
+                <p class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
             </div>
             <div class="avis" id="avis2">
                 <figure>
                     <img src="images/avis2.jpeg" alt="Portrait" class="photos-avis">
                 </figure>
-                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
                 <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
+                <p class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
 
             </div>
             <div class="avisp2" id="avis3">
                 <figure>
                     <img src="images/avis3.jpeg" alt="Portrait" class="photos-avis">
                 </figure>
-                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
                 <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
+                <p class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
 
             </div>
             <div class="avisp2" id="avis4">
                 <figure>
                     <img src="images/avis4.jpeg" alt="Portrait" class="photos-avis">
                 </figure>
-                <p class="avis-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                <p class="avis-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
                 <p class="avis-name">Barack obama</p>
                 <sub>Apple</sub>
+                <p class="quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </p>
 
             </div>
 
             <button class="Switch">Switch</button>
-        </section>
-        <h2>Collaborateurs</h2>
-        <section id="Collaborateurs">
+        </div>
+        <h2 class="categories" id="collab">Collaborateurs</h2>
+        <div id="Collaborateurs">
             <div class="line1">
                 <figure class="placing-img">
                     <img id="Tesla" src="images/collab1.png" alt="Image collaborateur">
@@ -116,7 +142,7 @@
                     <img id="Harvard" src="images/collab2.png" alt="Image collaborateur">
                 </figure>
                 <figure class="placing-img">
-                    <img class="image-size" src="images/collab3.png" alt="Image collaborateur">
+                    <img id="Stanford" src="images/collab3.png" alt="Image collaborateur">
                 </figure>
             </div>
             <div class="line2">
@@ -127,7 +153,7 @@
                     <img id="ESSEC" src="images/collab5.png" alt="Image collaborateur">
                 </figure>
                 <figure class="placing-img ">
-                    <img class="image-size " src="images/collab6.png " alt="Image collaborateur ">
+                    <img id="Poly" src="images/collab6.png " alt="Image collaborateur ">
                 </figure>
             </div>
             <div class="line3">
@@ -139,7 +165,7 @@
                     <img id="BMW" src="images/collab8.png " alt="Image collaborateur ">
                 </figure>
                 <figure class="placing-img ">
-                    <img class="image-size " src="images/collab9.png " alt="Image collaborateur ">
+                    <img id="Gob" src="images/collab9.png " alt="Image collaborateur ">
                 </figure>
             </div>
             <div class="line4">
@@ -150,72 +176,78 @@
             </div>
 
             <button id="Switch2" class="Switch">Switch</button>
-        </section>
-        <h2>Anecdotes vraies</h2>
-        <div class="Histoires " id="Histoire1 ">
-            <p class="anecdote ">
+        </div>
+        <h2 class="categories">Anecdotes</h2>
+        <div id="Stories">
+            <div class="Histoires " id="Histoire1">
                 <figure>
-                    <img src="symbol1 " alt="Symbole ">
+                    <p class="symbol"><i class="fa-solid fa-handshake"></i></p>
                 </figure>
-                Nombre de collaborations
-            </p>
-            <p>
-                135
-            </p>
+                <p class="anecdote ">
+                    Nombre de collaborations
+                </p>
+                <p class="number">
+                    135
+                </p>
 
-        </div>
-        <div class="Histoires " id="Histoire2 ">
-            <p class="anecdote ">
+            </div>
+            <div class="Histoires " id="Histoire2">
                 <figure>
-                    <img src="symbol1 " alt="Symbole ">
+                    <p class="symbol"> <i class="fa-solid fa-clock"></i></p>
                 </figure>
-                Heures de travail
-            </p>
-            <p>
-                35h
-            </p>
+                <p class="anecdote ">
+                    Heures de travail
+                </p>
+                <p class="number">
+                    35h
+                </p>
 
-        </div>
-        <div class="Histoires " id="Histoire3 ">
-            <figure>
-                <img src="symbol1 " alt="Symbole ">
-            </figure>
-            <p class="anecdote ">
-                Projets à réaliser
-            </p>
-            <p>
-                8
-            </p>
+            </div>
 
-        </div>
-        <div class="Histoires " id="Histoire4 ">
-            <figure>
-                <img src="symbol1 " alt="Symbole ">
-            </figure>
-            <p class="anecdote ">
-                Projet réalisé
-            </p>
-            <p>
-                30
-            </p>
+            <div class="Histoires" id="Histoire3">
+                <figure>
+                    <p class="symbol"> <i class="fa-solid fa-box-archive"></i> </p>
+                </figure>
+                <p class="anecdote ">
+                    Projets à réaliser
+                </p>
+                <p class="number">
+                    8
+                </p>
 
+            </div>
+            <div class="Histoires" id="Histoire4">
+                <figure>
+                    <p class="symbol "><i class="fa-solid fa-box-open"></i></p>
+                </figure>
+                <p class="anecdote ">
+                    Projets réalisés
+                </p>
+                <p class="number">
+                    30
+                </p>
+
+            </div>
         </div>
 
         <footer>
-            <a href="https://twitter.com/ " target="_blank ">
-                Twitter
-            </a>
+            <div class="social">
 
-            <a href="https://github.com/ " target="_blank ">
-                Github
-            </a>
+                <a class='pages' id="twitter" href="https://twitter.com/ " target="_blank">
+                    Twitter
+                </a>
 
-            <a href="https://instagram.com/ " target="_blank ">
-                Instagram
-            </a>
+                <a class='pages' id="github" href="https://github.com/ " target="_blank">
+                    Github
+                </a>
 
+                <a class='pages' id="insta" href="https://instagram.com/ " target="_blank">
+                    Instagram
+                </a>
 
-            <p>©2021, Tous droits réservés</p>
+            </div>
+
+            <p id="Copyright">©2021, Tous droits réservés</p>
         </footer>
 
     </div>
