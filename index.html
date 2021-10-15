@@ -75,66 +75,67 @@
         </div>
 
         <h2 class="categories">Avis</h2>
-        <div id="avis-container">
-            <div class="avis" id="avis1">
-                <figure>
-                    <img src="images/avis1.jpeg" alt="Portrait" class="photos-avis">
+        <div id="avis-container" class="carousel">
+            <div class="line active">
+                <div class="avis" id="avis1">
+                    <figure>
+                        <img src="images/avis1.jpeg" alt="Portrait" class="photos-avis">
 
-                </figure>
-                <p class="avis-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
-                <p class="avis-name">Barack obama</p>
-                <sub>Apple</sub>
+                    </figure>
+                    <p class="avis-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                    <p class="avis-name">Barack obama</p>
+                    <sub>Apple</sub>
 
-                <p class="quote">
-                    <i class="fa-solid fa-quote-left"></i>
-                </p>
+                    <p class="quote">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </p>
+                </div>
+                <div class="avis" id="avis2">
+                    <figure>
+                        <img src="images/avis2.jpeg" alt="Portrait" class="photos-avis">
+                    </figure>
+                    <p class="avis-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                    <p class="avis-name">Barack obama</p>
+                    <sub>Apple</sub>
+                    <p class="quote">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </p>
+                </div>
             </div>
-            <div class="avis" id="avis2">
-                <figure>
-                    <img src="images/avis2.jpeg" alt="Portrait" class="photos-avis">
-                </figure>
-                <p class="avis-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
-                <p class="avis-name">Barack obama</p>
-                <sub>Apple</sub>
-                <p class="quote">
-                    <i class="fa-solid fa-quote-left"></i>
-                </p>
+            <div class="line">
+                <div class="avis" id="avis3">
+                    <figure>
+                        <img src="images/avis3.jpeg" alt="Portrait" class="photos-avis">
+                    </figure>
+                    <p class="avis-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                    <p class="avis-name">Barack obama</p>
+                    <sub>Apple</sub>
+                    <p class="quote">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </p>
 
+                </div>
+                <div class="avis" id="avis4">
+                    <figure>
+                        <img src="images/avis4.jpeg" alt="Portrait" class="photos-avis">
+                    </figure>
+                    <p class="avis-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
+                    <p class="avis-name">Barack obama</p>
+                    <sub>Apple</sub>
+                    <p class="quote">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </p>
+                </div>
             </div>
-            <div class="avisp2" id="avis3">
-                <figure>
-                    <img src="images/avis3.jpeg" alt="Portrait" class="photos-avis">
-                </figure>
-                <p class="avis-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
-                <p class="avis-name">Barack obama</p>
-                <sub>Apple</sub>
-                <p class="quote">
-                    <i class="fa-solid fa-quote-left"></i>
-                </p>
-
-            </div>
-            <div class="avisp2" id="avis4">
-                <figure>
-                    <img src="images/avis4.jpeg" alt="Portrait" class="photos-avis">
-                </figure>
-                <p class="avis-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, at.</p>
-                <p class="avis-name">Barack obama</p>
-                <sub>Apple</sub>
-                <p class="quote">
-                    <i class="fa-solid fa-quote-left"></i>
-                </p>
-
-            </div>
-
-            <button class="Switch">Switch</button>
         </div>
+        <button class="switch" data-target="avis-container">Switch</button>
         <h2 class="categories" id="collab">Collaborateurs</h2>
-        <div id="Collaborateurs">
-            <div class="line1">
+        <div id="collaborateurs" class="carousel">
+            <div class="line active">
                 <figure class="placing-img">
                     <img id="Tesla" src="images/collab1.png" alt="Image collaborateur">
                 </figure>
@@ -145,7 +146,7 @@
                     <img id="Stanford" src="images/collab3.png" alt="Image collaborateur">
                 </figure>
             </div>
-            <div class="line2">
+            <div class="line">
                 <figure class="placing-img">
                     <img id="HEC" src="images/collab4.png" alt="Image collaborateur">
                 </figure>
@@ -156,8 +157,7 @@
                     <img id="Poly" src="images/collab6.png " alt="Image collaborateur ">
                 </figure>
             </div>
-            <div class="line3">
-
+            <div class="line">
                 <figure class="placing-img ">
                     <img id="SpaceX" src="images/collab7.png " alt="Image collaborateur ">
                 </figure>
@@ -168,15 +168,13 @@
                     <img id="Gob" src="images/collab9.png " alt="Image collaborateur ">
                 </figure>
             </div>
-            <div class="line4">
-
+            <div class="line align-center">
                 <figure class="placing-img ">
                     <img id="Amazon" src="images/collab10.png " alt="Image collaborateur ">
                 </figure>
             </div>
-
-            <button id="Switch2" class="Switch">Switch</button>
         </div>
+        <button id="switch-carousel" data-target="collaborateurs" class="switch">Switch</button>
         <h2 class="categories">Anecdotes</h2>
         <div id="Stories">
             <div class="Histoires " id="Histoire1">

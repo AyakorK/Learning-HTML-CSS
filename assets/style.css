@@ -3,14 +3,17 @@
 }
 
 body {
+    width: 100%;
+    margin: 0;
     background-color: whitesmoke;
     background-image: url(../background/imgfond.png);
-    height: 100%;
     overflow-x: hidden;
 }
 
 #cv-container {
-    margin: 5% 8%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
     padding: 0.3em 2%;
@@ -98,12 +101,8 @@ h1 {
 }
 
 #pp {
-    width: 200px;
-    margin: 28px;
-}
-
-#profile-picture {
-    width: 117%;
+    width: 100%;
+    margin-left: 35%
 }
 
 #download {
@@ -111,6 +110,8 @@ h1 {
     padding: 7px;
     border-radius: 200px;
     margin-top: 3%;
+    margin-left: 50%;
+    transform: translateX(-50%);
     background-color: transparent;
     border-color: #0d7aec;
 }
@@ -122,7 +123,6 @@ h1 {
 
 aside {
     padding: 20px;
-    flex-basis: 50%;
     margin-left: 5%;
 }
 
@@ -155,7 +155,7 @@ h2 {
     max-height: 10%;
     margin-left: -25% auto;
     padding-right: 15%;
-    min-width: 240px;
+    min-width: auto;
     transform: translateX(25%);
 }
 
@@ -185,26 +185,31 @@ h2 {
 /*----------------------------------------------------------------*/
 
 #avis-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 80px 50px;
 }
 
 .avis {
-    display: inline-block;
     border: 2px solid rgba(163, 163, 163, 0.281);
     border-radius: 30px;
-    width: 30%;
-    min-width: 300px;
     height: 150px;
-    margin: auto;
-    padding-right: 15%;
-    margin-top: 30px;
+    margin: auto 30px;
 }
 
+@media screen and (max-width: 768px) {
+    #avis-container .line {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #avis-container .line .avis {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* 
 .avisp2 {
-    visibility: hidden;
     display: inline-block;
     border: 2px solid rgba(163, 163, 163, 0.281);
     border-radius: 30px;
@@ -213,8 +218,7 @@ h2 {
     height: 150px;
     margin: auto;
     padding-right: 15%;
-    margin-top: -156px;
-}
+} */
 
 .photos-avis {
     position: relative;
@@ -228,7 +232,7 @@ h2 {
     display: flex;
     margin-top: -110px;
     margin-left: 75px;
-    width: 98%;
+    width: calc(100% - 75px);
     font-size: 1.2em;
     line-height: 1em;
     font-style: italic;
@@ -253,19 +257,19 @@ sub {
     transform: scale(1.4)
 }
 
-.Switch {
+.switch {
     width: 40%;
     background-color: transparent;
     margin-top: 20px;
     text-align: center;
     margin-left: 50%;
-    transform: translateX(-65%);
+    transform: translateX(-50%);
     transition: 1s;
     border-radius: 200px;
     border-color: #0d7aec;
 }
 
-.Switch:hover {
+.switch:hover {
     background-color: rgba(199, 199, 239, 0.363)
 }
 
@@ -274,134 +278,6 @@ sub {
     margin-top: -90px;
     margin-left: 30px;
     color: rgba(149, 149, 149, 0.24);
-}
-
-
-/*----------------------------------------------------------------*/
-
-#collab-title {
-    margin-bottom: -50px;
-}
-
-#Collaborateurs {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    height: 350px;
-    width: 100%;
-}
-
-.placing-img {
-    display: inline-block;
-    width: 17%;
-    max-width: 450px;
-    padding: 3%;
-    padding-left: 0px;
-    margin-left: 100px;
-}
-
-.image-size {
-    width: 60%;
-    height: 80%;
-}
-
-.line1 {
-    position: absolute;
-    width: 100%;
-    margin-top: -30px;
-    margin-left: -80px;
-    max-height: 150px;
-}
-
-.line2 {
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 60px;
-    visibility: hidden;
-}
-
-.line3 {
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 80px;
-    visibility: hidden;
-}
-
-.line4 {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 420px;
-    visibility: hidden;
-}
-
-#Tesla {
-    min-width: 150px;
-    width: 120%;
-    height: 90%;
-}
-
-#Harvard {
-    min-width: 70px;
-    width: 70%;
-    height: 60%;
-    transform: translateX(26%) translateY(2%);
-}
-
-#Stanford {
-    min-width: 50px;
-    width: 70%;
-    height: 70%;
-}
-
-#ESSEC {
-    min-width: 150px;
-    width: 80%;
-    height: 80%;
-    transform: translateX(-15%);
-}
-
-#Poly {
-    min-width: 50px;
-    width: 60%;
-    height: 60%;
-}
-
-#HEC {
-    min-width: 200px;
-    width: 80%;
-    height: 80%;
-    transform: translateX(15%) translateY(-25%);
-}
-
-#BMW {
-    min-width: 200px;
-    width: 130%;
-    height: 100%;
-    transform: translateX(-28%);
-}
-
-#Gob {
-    min-width: 200px;
-    width: 80%;
-    height: 100%;
-    transform: translateX(-20%);
-}
-
-#SpaceX {
-    min-width: 200px;
-    width: 120%;
-}
-
-#Amazon {
-    min-width: 200px;
-    width: 100%;
-    transform: translateX(20%) translateY(30%)
-}
-
-#Switch2 {
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 46%;
 }
 
 
@@ -456,235 +332,10 @@ sub {
 
 /*----------------------------------------------------------------*/
 
-@media screen and (min-width: 1900px) {
-    .line1,
-    .line2,
-    .line3,
-    .line4 {
-        min-width: 1300px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: -30px;
-    }
-    .line1 {
-        margin-left: -160px;
-    }
-    #Tesla {
-        min-width: 150px;
-        width: 300px;
-        height: 220px;
-        margin-top: -20px;
-    }
-    #Harvard {
-        min-width: 70px;
-        width: 240px;
-        height: 240px;
-        transform: translateX(26%) translateY(2%);
-        margin-top: -20px;
-        margin-left: -90px;
-    }
-    #Stanford {
-        min-width: 50px;
-        width: 240px;
-        height: 240px;
-        margin-top: -20px;
-        margin-left: -60px;
-    }
-    #ESSEC {
-        min-width: 150px;
-        width: 70%;
-        height: 80%;
-        margin-top: -25px;
-        transform: translateX(-15%);
-    }
-    #Poly {
-        min-width: 50px;
-        width: 60%;
-        height: 80%;
-    }
-    #HEC {
-        min-width: 200px;
-        width: 70%;
-        height: 70%;
-        margin-top: 40px;
-        transform: translateX(15%) translateY(-25%);
-    }
-    #BMW {
-        min-width: 200px;
-        width: 130%;
-        height: 100%;
-        transform: translateX(-28%);
-    }
-    #Gob {
-        min-width: 200px;
-        width: 80%;
-        height: 100%;
-        transform: translateX(-20%);
-    }
-    #SpaceX {
-        min-width: 200px;
-        width: 120%;
-    }
-    #Amazon {
-        min-width: 200px;
-        width: 100%;
-        margin-left: 140px;
-        margin-top: 30px;
-        transform: translateX(20%) translateY(30%)
-    }
-}
-
-@media screen and (max-width: 1520px) {
-    .line1,
-    .line2,
-    .line3,
-    .line4 {
-        min-width: 150px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    #Tesla {
-        width: 200px;
-        height: 140px;
-        margin-left: -65%;
-    }
-    #Harvard {
-        height: 160px;
-        width: 160px;
-        margin-left: -75%;
-    }
-    #Stanford {
-        height: 160px;
-        width: 160px;
-        margin-left: -50%;
-    }
-    .line2 {
-        margin-left: 30px;
-    }
-    #HEC {
-        height: 120px;
-        width: 100px;
-        margin-top: 50px;
-        margin-left: -40%;
-    }
-    #ESSEC {
-        width: 180px;
-        height: 160px;
-        margin-top: -5px;
-        margin-left: 30%;
-    }
-    #Poly {
-        width: 120px;
-        height: 160px;
-        margin-left: 90%;
-    }
-    .line3 {
-        margin-left: 10px;
-    }
-    #SpaceX {
-        width: 180px;
-        height: 160px;
-        margin-left: -25%;
-    }
-    #BMW {
-        width: 240px;
-        height: 140px;
-        margin-left: 20%;
-    }
-    #Gob {
-        width: 180px;
-        height: 210px;
-        margin-left: 70%;
-        margin-top: -30px;
-    }
-    #Amazon {
-        margin-left: 150px;
-        margin-top: 30px;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .line1,
-    .line2,
-    .line3,
-    .line4 {
-        min-width: 150px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-    .line1 {
-        margin-top: 40px;
-    }
-    #Tesla {
-        width: 200px;
-        height: 140px;
-        margin-left: -65%;
-    }
-    #Harvard {
-        height: 160px;
-        width: 160px;
-        margin-left: -95%;
-    }
-    #Stanford {
-        height: 160px;
-        width: 160px;
-        margin-left: -90%;
-    }
-    .line2 {
-        margin-top: 40px;
-    }
-    #HEC {
-        height: 120px;
-        width: 100px;
-        margin-top: 50px;
-        margin-left: -50%;
-    }
-    #ESSEC {
-        width: 180px;
-        height: 160px;
-        margin-top: -5px;
-        margin-left: -15%;
-    }
-    #Poly {
-        width: 120px;
-        height: 160px;
-        margin-left: -40%;
-    }
-    .line3 {
-        margin-top: 40px;
-    }
-    #SpaceX {
-        width: 180px;
-        height: 160px;
-        margin-left: -40%;
-    }
-    #BMW {
-        width: 240px;
-        height: 140px;
-        margin-left: -30%;
-    }
-    #Gob {
-        width: 140px;
-        height: 180px;
-        margin-left: -30%;
-    }
-    .line4 {
-        margin-top: 30px;
-    }
-    #Amazon {
-        margin-left: 40px;
-    }
-}
-
 .social {
     border-top: 1px solid rgba(134, 134, 134, 0.368);
-    width: 108%;
+    width: 100%;
     padding-top: 30px;
-    margin-left: -30px;
 }
 
 #insta,
@@ -697,474 +348,221 @@ sub {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 900px) {
+    body {
+        margin: 0;
+        width: 100%;
+    }
+    #cv-container {
+        width: 100%;
+        margin: 0;
+        transform: translateX(0);
+    }
+    #name {
+        font-size: 1em;
+        width: 30%;
+    }
+    #accueil {
+        font-size: -0.2em;
+    }
+    #contacts {
+        font-size: -0.2em;
+    }
+    #bandeau {
+        padding: 0;
+        justify-content: space-between;
+    }
+    #pp {
+        width: 3%;
+        padding: 0;
+    }
+    h1 {
+        font-size: 2.4em;
+    }
+    h2 {
+        font-size: 2em;
+        margin-left: 0.5em;
+    }
+    #Skill {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Skills {
+        width: 90%;
+        padding-right: 0;
+        margin-left: -30%;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+    }
+    .skill-desc {
+        width: 90%;
+        margin: 0;
+        font-size: 0.8em;
+    }
+    .line.active .avis {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: 200px;
+        max-width: 350px;
+    }
+    .photos-avis {
+        margin-left: 20px;
+    }
+    .avis-text {
+        font-size: 1.3em;
+        max-width: 260px;
+    }
+    .avis-name {
+        margin-top: -40px;
+        font-size: 1.1em;
+    }
+    .Switch {
+        height: 40px;
+        font-size: 1.1em;
+    }
+    .quote {
+        margin-left: -30px;
+        margin-top: -80px;
+    }
+    sub {
+        font-size: 1.1em;
+        margin-top: 10px;
+        margin-left: -120px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #insta,
+    #twitter,
+    #github {
+        margin-left: 40%;
+    }
+    #Copyright {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    aside {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    #collab-title {
+        margin-bottom: 0px;
+    }
+    .Histoires {
+        width: 300px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .quote {
+        margin-left: -30px;
+        margin-top: -80px;
+    }
     #Stories {
-        min-width: 300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #pp {
+        margin: 0;
+    }
+    #download {
+        margin: 0;
+        transform: translateX(0);
+    }
+    #contacts {
+        left: 48px;
+    }
+    aside {
+        padding-right: 0;
+    }
+    #collab-title {
+        margin-bottom: 0px;
+    }
+    .avis-text {
+        font-size: 0.9em;
+        max-width: 260px;
+    }
+    .avis-name {
+        margin-top: -30px;
+        margin-left: 25px;
+        font-size: 0.7em;
+    }
+    .quote {
+        margin-left: -30px;
+        margin-top: -80px;
+    }
+    sub {
+        font-size: 0.5em;
+        margin-top: 10px;
+        margin-left: -75px;
     }
     .Histoires {
-        width: 400px;
-        margin-bottom: 40px;
-        margin-right: 40px;
-    }
-    .symbol {
-        margin-top: 30px;
-    }
-    .anecdote {
-        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
 
-.social {
-    margin-left: 10px;
+
+/***** V2 *****/
+
+#collaborateurs {
+    padding: 80px 50px;
+    max-height: 100px;
+}
+
+.carousel {
+    display: block;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+.carousel .line {
+    display: none;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.carousel .line.active {
+    display: flex;
+}
+
+.carousel .line.align-center {
+    justify-content: center;
+}
+
+#collaborateurs .line figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100px;
+}
+
+#collaborateurs .line figure img {
+    height: auto;
     width: 100%;
+    max-height: 100%;
 }
 
-@media screen and (max-width: 1135px) {
-    #avis3 {
-        margin-top: -342px;
+@media screen and (max-width: 768px) {
+    #collaborateurs {
+        padding: 0px;
     }
-    @media screen and (max-width: 1050px) {
-        .line1 {
-            margin-top: 30px;
-        }
-        #Tesla {
-            width: 200px;
-            height: 140px;
-            margin-left: -55%;
-        }
-        #Harvard {
-            height: 160px;
-            width: 160px;
-            margin-left: -105%;
-        }
-        #Stanford {
-            height: 160px;
-            width: 160px;
-            margin-left: -90%;
-        }
-        .line2 {
-            margin-top: 20px;
-        }
-        #HEC {
-            height: 120px;
-            width: 100px;
-            margin-top: 50px;
-            margin-left: -90%;
-        }
-        #ESSEC {
-            width: 180px;
-            height: 160px;
-            margin-top: -5px;
-            margin-left: -45%;
-            margin-left: -45%;
-        }
-        #Poly {
-            width: 120px;
-            height: 160px;
-            margin-left: -70%;
-        }
-        .line3 {
-            margin-top: 40px;
-        }
-        #SpaceX {
-            width: 180px;
-            height: 160px;
-            margin-left: -60%;
-        }
-        #BMW {
-            width: 240px;
-            height: 140px;
-            margin-left: -60%;
-        }
-        #Gob {
-            width: 140px;
-            height: 180px;
-            margin-left: -80%;
-        }
-        .line4 {
-            margin-top: 30px;
-        }
-        #Amazon {
-            margin-left: -10px;
-        }
-    }
-    @media screen and (max-width: 960px) {
-        #avis3 {
-            margin-top: -342px;
-        }
-        .line1 {
-            margin-top: -50px;
-            margin-left: 30px;
-        }
-        .line2,
-        .line3,
-        .line4 {
-            margin-top: -50px;
-        }
-        #Tesla {
-            margin-left: -75%;
-            width: 200px;
-            height: 160px;
-        }
-        #Harvard {
-            margin-left: -210px;
-            min-width: 160px;
-            height: 160px;
-        }
-        #Stanford {
-            margin-left: -190px;
-            min-width: 160px;
-            height: 160px;
-        }
-        #HEC {
-            margin-left: -65%;
-            margin-top: 40px;
-            min-width: 160px;
-            height: 130px;
-        }
-        #ESSEC {
-            margin-left: -35%;
-            margin-top: -5px;
-            width: 100px;
-            height: 140px;
-        }
-        #Poly {
-            margin-left: -25%;
-            width: 100px;
-            height: 140px;
-        }
-        #SpaceX {
-            width: 160px;
-            height: 180px;
-            margin-left: -65%;
-            margin-top: -30px;
-        }
-        #BMW {
-            width: 120px;
-            height: 120px;
-            margin-left: -60%;
-            margin-top: -10px;
-        }
-        #Gob {
-            margin-left: -85%;
-            margin-top: -40px;
-            width: 100px;
-            height: 200px;
-        }
-        @media screen and (max-width: 900px) {
-            header {
-                max-width: 650px;
-                margin-left: 15px;
-            }
-            body {
-                margin: 0px;
-            }
-            #name {
-                font-size: 1em;
-                width: 30%;
-            }
-            #accueil {
-                font-size: -0.2em;
-            }
-            #contacts {
-                font-size: -0.2em;
-            }
-            #cv-container {
-                width: 100%;
-                margin: 0px;
-                padding: 0px;
-            }
-            #pp {
-                min-width: 300px;
-            }
-            h1 {
-                font-size: 2.4em;
-            }
-            h2 {
-                font-size: 2em;
-                margin-left: 0.5em;
-            }
-            #Skill {
-                display: flex;
-                flex-wrap: wrap;
-                margin-left: -330px;
-            }
-            .Skills {
-                width: 60%;
-                padding-right: 0px;
-                margin-left: -30px;
-                min-width: 300px;
-                font-size: 1.4em;
-            }
-            .avis,
-            .avisp2 {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                min-width: 100px;
-                max-width: 350px;
-            }
-            .photos-avis {
-                margin-left: 20px;
-            }
-            .avis-text {
-                font-size: 1.3em;
-                max-width: 260px;
-            }
-            .avis-name {
-                margin-top: -40px;
-                font-size: 1.1em;
-            }
-            .Switch {
-                height: 40px;
-                font-size: 1.1em;
-            }
-            .quote {
-                margin-left: -30px;
-                margin-top: -80px;
-            }
-            sub {
-                font-size: 1.1em;
-                margin-top: 10px;
-                margin-left: -120px;
-            }
-            #collab-title {
-                margin-bottom: 0px;
-            }
-            #Switch2 {
-                margin-top: 200px;
-            }
-            #insta,
-            #twitter,
-            #github {
-                margin-left: 30px;
-            }
-            #Tesla {
-                margin-left: -120px;
-                margin-top: 0px;
-                width: 230px;
-                height: 140px;
-            }
-            #Harvard {
-                margin-left: -160px;
-                min-width: 150px;
-                height: 150px;
-            }
-            #Stanford {
-                margin-left: -140px;
-                min-width: 150px;
-                height: 150px;
-            }
-            #HEC {
-                margin-left: -90px;
-                margin-top: 40px;
-                min-width: 140px;
-                height: 110px;
-            }
-            #ESSEC {
-                margin-left: 5px;
-                margin-top: -5px;
-                width: 100px;
-                height: 140px;
-            }
-            #Poly {
-                margin-left: 10px;
-                width: 100px;
-                height: 140px;
-            }
-            #SpaceX {
-                width: 160px;
-                height: 180px;
-                margin-left: -90px;
-                margin-top: -30px;
-            }
-            #BMW {
-                width: 140px;
-                height: 120px;
-                margin-left: -50px;
-                margin-top: -10px;
-            }
-            #Gob {
-                margin-left: -110px;
-                margin-top: -40px;
-                width: 100px;
-                height: 200px;
-            }
-            #Amazon {
-                margin-top: 20px;
-                margin-left: -60px;
-            }
-            #Stories {
-                min-width: 500px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-        @media screen and (max-width: 800px) {
-            aside {
-                flex-wrap: wrap;
-            }
-            header {
-                width: 580px;
-            }
-            #collab-title {
-                margin-bottom: 0px;
-            }
-            .Histoires {
-                width: 300px;
-                margin-bottom: 30px;
-                margin-right: 20px;
-            }
-            .quote {
-                margin-left: -30px;
-                margin-top: -80px;
-            }
-            #Stories {
-                min-width: 500px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            #Tesla {
-                margin-left: -120px;
-                margin-top: 0px;
-                width: 230px;
-                height: 140px;
-            }
-            #Harvard {
-                margin-left: -200px;
-                min-width: 150px;
-                height: 150px;
-            }
-            #Stanford {
-                margin-left: -110px;
-                min-width: 150px;
-                height: 150px;
-            }
-            #HEC {
-                margin-left: -70px;
-                margin-top: 40px;
-                min-width: 140px;
-                height: 110px;
-            }
-            #ESSEC {
-                margin-left: -30px;
-                margin-top: -5px;
-                width: 100px;
-                height: 140px;
-            }
-            #Poly {
-                margin-left: -50px;
-                width: 100px;
-                height: 140px;
-            }
-            #SpaceX {
-                width: 160px;
-                height: 180px;
-                margin-left: -70px;
-                margin-top: -30px;
-            }
-            #BMW {
-                width: 140px;
-                height: 120px;
-                margin-left: -80px;
-                margin-top: -10px;
-            }
-            #Gob {
-                margin-left: -140px;
-                margin-top: -40px;
-                width: 100px;
-                height: 200px;
-            }
-            #Amazon {
-                margin-top: 30px;
-                margin-left: -90px;
-            }
-            #Stories {
-                min-width: 500px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-        @media screen and (max-width: 400px) {
-            header {
-                width: 540px;
-            }
-            #cv-container {
-                width: 662px
-            }
-            #contacts {
-                left: 48px;
-            }
-            #profile-picture {
-                width: 400px;
-            }
-            aside {
-                padding-right: 60px;
-            }
-            #collab-title {
-                margin-bottom: 0px;
-            }
-            #Tesla {
-                margin-left: -30px;
-                margin-top: 0px;
-                width: 230px;
-                height: 140px;
-            }
-            #Harvard {
-                margin-left: -20px;
-                min-width: 150px;
-                height: 150px;
-            }
-            #Stanford {
-                margin-left: 50px;
-                min-width: 150px;
-                height: 150px;
-            }
-            #HEC {
-                margin-left: -70px;
-                margin-top: 40px;
-                min-width: 140px;
-                height: 110px;
-            }
-            #ESSEC {
-                margin-left: -50px;
-                margin-top: -5px;
-                width: 100px;
-                height: 140px;
-            }
-            #Poly {
-                margin-left: -90px;
-                width: 100px;
-                height: 140px;
-            }
-            #SpaceX {
-                width: 160px;
-                height: 180px;
-                margin-left: -70px;
-                margin-top: -30px;
-            }
-            #BMW {
-                width: 140px;
-                height: 120px;
-                margin-left: -110px;
-                margin-top: -10px;
-            }
-            #Gob {
-                margin-left: -170px;
-                margin-top: -40px;
-                width: 100px;
-                height: 200px;
-            }
-            #Amazon {
-                margin-top: 30px;
-                margin-left: -10px;
-            }
-        }
+    #collaborateurs .line figure {
+        width: 55px;
     }
 }
